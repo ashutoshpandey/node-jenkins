@@ -1,0 +1,33 @@
+{
+  "name": "node-jenkins",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/server.js",
+  "scripts": {
+    "start:dev": "nodemon dist/server.js",
+    "build:dev": "tsc --watch --preserveWatchOutput",
+    "dev": "concurrently \"npm:build:dev\" \"npm:start:dev\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashutoshpandey/node-jenkins.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ashutoshpandey/node-jenkins/issues"
+  },
+  "homepage": "https://github.com/ashutoshpandey/node-jenkins#readme",
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.23.3"
+  }
+}
