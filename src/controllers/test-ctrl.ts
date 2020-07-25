@@ -15,7 +15,7 @@ export class TestController implements BaseController{
      * Initializes API routes
      */
     public initializeRoutes() {	
-		this.router.get('/test', (req, res) => { this.test(req, res) });
+		this.router.get('/test', (req: Request, res: Response) => { this.test(req, res) });
 	}
 
  	public test(req: Request, res: Response): void {

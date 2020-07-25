@@ -1,5 +1,3 @@
-import { createConnection } from 'typeorm';
-
 import App from './app';
 
 import { TestController } from './controllers/test-ctrl';
